@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  background: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: white;
+}
+
+span {
+  color: white;
+}
+.container {
+  max-width: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  //   background-image: linear-gradient(red, black);
+  border-radius: 8px;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    a {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.attn {
+  margin-top: 5rem;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  font-size: 20rem;
+}
+
+.section {
+  display: flex;
+  justify-items: space-between;
+
+  .info {
+    width: 35%;
+    height: auto;
+    //   background: rgba(255, 0, 0, 0.534);
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    .info-text {
+      color: white;
+      font-size: 2rem;
+    }
+  }
+
+  .features {
+    width: 64%;
+  }
+}
