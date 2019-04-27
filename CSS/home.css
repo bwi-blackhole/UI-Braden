@@ -42,7 +42,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 7rem;
+  height: 5rem;
   border-radius: 8px;
 }
 .header .navbar {
@@ -51,24 +51,30 @@ span {
   width: 30rem;
 }
 .header .navbar a {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-decoration: none;
   color: white;
 }
 .attn {
-  margin-top: 5rem;
+  margin: auto;
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black;
+  background-image: url("https://thumbs.gfycat.com/JubilantDefenselessIndochinahogdeer.webp");
+  background-size: 100% 100%;
+  background-color: black;
   color: white;
   font-size: 20rem;
+  border-radius: 10px;
 }
 .section {
   display: flex;
   justify-items: space-between;
+  margin-top: 3rem;
+  background: #796d6d;
+  border-radius: 10px;
 }
 .section .info {
   width: 35%;
@@ -80,8 +86,43 @@ span {
 }
 .section .info .info-text {
   color: white;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .section .features {
-  width: 64%;
+  width: 60%;
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+.section .features .feature-top {
+  margin: 10px 0 0 0;
+}
+.section .features .titles {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+}
+.section .features .titles .feature-title {
+  width: 33.3%;
+  text-align: center;
+  margin-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+.section .features .feature-item {
+  display: none;
+  margin-top: 0;
+  text-align: center;
+  height: 20rem;
+  padding: 60px;
+  font-size: 2.2rem;
+  border-radius: 0 0 10px 10px;
+}
+.section .features .text-selected {
+  background: orangered;
+  display: block;
+}
+.tab-selected {
+  background: orangered;
 }

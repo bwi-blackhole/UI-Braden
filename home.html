@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="CSS/home.css" />
   </head>
   <body>
-    <script src="" async defer></script>
+    <script src="Tabs/tabs.js" async defer></script>
     <div class="container">
       <div class="header">
         <div class="navbar">
           <a href="">Home</a>
           <a href="about-us.html">About Us</a>
-          <a href="">Features</a>
+          <a href="#features">Features</a>
           <a href="">Login</a>
         </div>
       </div>
@@ -41,27 +41,25 @@
             into the black hole so you can move on with your life.
           </p>
         </div>
-        <div class="features">
+        <div id="features" class="features">
           <h2 class="feature-top">Features</h2>
-          <div>
-            <h3 class="feature-title">Let It Out</h3>
-            <p class="feature-text">
+          <div class="titles">
+            <h3 class="feature-title tab-selected" data-tab="1">Let It Out</h3>
+            <h3 class="feature-title" data-tab="2">Save & Edit</h3>
+            <h3 class="feature-title" data-tab="3">Make It Vanish</h3>
+          </div>
+          <div class="feature-items">
+            <p class="feature-item text-selected" data-tab="1">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
               quasi perferendis praesentium repellat animi porro quae modi neque
               quam dolores?
             </p>
-          </div>
-          <div>
-            <h3 class="feature-title">Save & Edit</h3>
-            <p class="feature-text">
+            <p class="feature-item" data-tab="2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Cupiditate quas quod molestiae ipsam ut voluptatibus autem
               expedita laborum quis voluptas.
             </p>
-          </div>
-          <div>
-            <h3 class="feature-title">Make It Vanish</h3>
-            <p class="feature-text">
+            <p class="feature-item" data-tab="3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
               temporibus architecto nihil minus odit ipsum magni. Eos eius
               doloremque delectus.
