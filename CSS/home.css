@@ -126,3 +126,62 @@ span {
 .tab-selected {
   background: orangered;
 }
+.meet {
+  font-size: 3rem;
+  text-align: center;
+}
+.team {
+  display: flex;
+  justify-content: space-around;
+}
+.team .tab-name {
+  font-size: 2.2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.team .name-selected {
+  background: orangered;
+  width: auto;
+  border-radius: 10px;
+  width: 10%;
+}
+.team-section {
+  display: flex;
+  justify-content: center;
+}
+.team-section .team-info {
+  display: flex;
+  justify-content: center;
+  background: #796d6d;
+  border-radius: 10px;
+}
+.team-section .team-info .member {
+  display: none;
+}
+.team-section .team-info .member .member-image {
+  cursor: pointer;
+  padding: 2px 0 0 10px;
+}
+.team-section .team-info .member .member-image img {
+  border-radius: 10px;
+}
+.team-section .team-info .member .member-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+.team-section .team-info .member .member-info .name {
+  margin-right: 10px;
+}
+.team-section .team-info .member .member-info .role {
+  font-size: 2rem;
+}
+.team-section .team-info .member-selected {
+  display: flex;
+  justify-content: center;
+  background: orangered;
+  border-radius: 10px;
+  width: auto;
+  margin: 10px 0 10px 0;
+}
