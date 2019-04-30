@@ -55,6 +55,11 @@ span {
   text-decoration: none;
   color: white;
 }
+.header .navbar a:hover {
+  background: rgba(255, 0, 0, 0.397);
+  border-radius: 10px;
+  width: max-content;
+}
 .attn {
   margin: auto;
   height: 100vh;
@@ -140,6 +145,9 @@ span {
   border-radius: 10px 10px 0 0;
   cursor: pointer;
 }
+.section .features .titles .feature-title:hover {
+  background: rgba(255, 0, 0, 0.397);
+}
 @media (max-width: 500px) {
   .section .features .titles .feature-title {
     font-size: 2.5rem;
@@ -181,26 +189,56 @@ span {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .team {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .team .tab-name {
   font-size: 2.2rem;
+  width: 12%;
   text-align: center;
   cursor: pointer;
 }
+.team .tab-name:hover {
+  background: rgba(255, 0, 0, 0.397);
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .team .tab-name {
+    width: 100px;
+  }
+}
 .team .name-selected {
   background: orangered;
-  width: auto;
   border-radius: 10px;
-  width: 10%;
+  width: 12%;
+}
+@media (max-width: 500px) {
+  .team .name-selected {
+    width: 100px;
+  }
 }
 .team-section {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .team-section {
+    width: 100%;
+  }
 }
 .team-section .team-info {
   display: flex;
   justify-content: center;
   background: #796d6d;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .team-section .team-info {
+    width: 100%;
+  }
 }
 .team-section .team-info .member {
   display: none;
@@ -209,8 +247,18 @@ span {
   cursor: pointer;
   padding: 2px 0 0 10px;
 }
+@media (max-width: 500px) {
+  .team-section .team-info .member .member-image {
+    padding: 0;
+  }
+}
 .team-section .team-info .member .member-image img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .team-section .team-info .member .member-image img {
+    width: 250px;
+  }
 }
 .team-section .team-info .member .member-info {
   display: flex;
@@ -221,8 +269,19 @@ span {
 .team-section .team-info .member .member-info .name {
   margin-right: 10px;
 }
+@media (max-width: 500px) {
+  .team-section .team-info .member .member-info .name {
+    text-align: center;
+    margin: 0;
+  }
+}
 .team-section .team-info .member .member-info .role {
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .team-section .team-info .member .member-info .role {
+    text-align: center;
+  }
 }
 .team-section .team-info .member-selected {
   display: flex;
@@ -231,4 +290,9 @@ span {
   border-radius: 10px;
   width: auto;
   margin: 10px 0 10px 0;
+}
+@media (max-width: 500px) {
+  .team-section .team-info .member-selected {
+    width: 100%;
+  }
 }
