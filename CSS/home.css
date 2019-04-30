@@ -55,6 +55,13 @@ span {
   text-decoration: none;
   color: white;
 }
+@media (min-width: 801px) {
+  .header .navbar a:hover {
+    background: rgba(255, 0, 0, 0.397);
+    border-radius: 10px;
+    width: max-content;
+  }
+}
 .attn {
   margin: auto;
   height: 100vh;
@@ -69,12 +76,24 @@ span {
   font-size: 20rem;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .attn {
+    width: 100%;
+    font-size: 10rem;
+    text-align: center;
+  }
+}
 .section {
   display: flex;
   justify-items: space-between;
   margin-top: 3rem;
   background: #796d6d;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .section {
+    flex-direction: column;
+  }
 }
 .section .info {
   width: 35%;
@@ -83,6 +102,13 @@ span {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 500px) {
+  .section .info {
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+    background: orangered;
+  }
 }
 .section .info .info-text {
   color: white;
@@ -95,8 +121,19 @@ span {
   padding-top: 2rem;
   padding-right: 2rem;
 }
+@media (max-width: 500px) {
+  .section .features {
+    width: 100%;
+    padding: 0;
+  }
+}
 .section .features .feature-top {
   margin: 10px 0 0 0;
+}
+@media (max-width: 500px) {
+  .section .features .feature-top {
+    text-align: center;
+  }
 }
 .section .features .titles {
   display: flex;
@@ -110,6 +147,17 @@ span {
   border-radius: 10px 10px 0 0;
   cursor: pointer;
 }
+@media (min-width: 801px) {
+  .section .features .titles .feature-title:hover {
+    background: rgba(255, 0, 0, 0.397);
+    border-radius: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .section .features .titles .feature-title {
+    font-size: 2.5rem;
+  }
+}
 .section .features .feature-item {
   display: none;
   margin-top: 0;
@@ -119,9 +167,21 @@ span {
   font-size: 2.2rem;
   border-radius: 0 0 10px 10px;
 }
+@media (max-width: 500px) {
+  .section .features .feature-item {
+    padding: 0;
+    margin: 0;
+  }
+}
 .section .features .text-selected {
   background: orangered;
   display: block;
+}
+@media (max-width: 500px) {
+  .section .features .text-selected {
+    display: flex;
+    align-items: center;
+  }
 }
 .tab-selected {
   background: orangered;
@@ -134,26 +194,58 @@ span {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .team {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .team .tab-name {
   font-size: 2.2rem;
+  width: 12%;
   text-align: center;
   cursor: pointer;
 }
+@media (min-width: 801px) {
+  .team .tab-name:hover {
+    background: rgba(255, 0, 0, 0.397);
+    border-radius: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .team .tab-name {
+    width: 100px;
+  }
+}
 .team .name-selected {
   background: orangered;
-  width: auto;
   border-radius: 10px;
-  width: 10%;
+  width: 12%;
+}
+@media (max-width: 500px) {
+  .team .name-selected {
+    width: 100px;
+  }
 }
 .team-section {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .team-section {
+    width: 100%;
+  }
 }
 .team-section .team-info {
   display: flex;
   justify-content: center;
   background: #796d6d;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .team-section .team-info {
+    width: 100%;
+  }
 }
 .team-section .team-info .member {
   display: none;
@@ -162,8 +254,18 @@ span {
   cursor: pointer;
   padding: 2px 0 0 10px;
 }
+@media (max-width: 500px) {
+  .team-section .team-info .member .member-image {
+    padding: 0;
+  }
+}
 .team-section .team-info .member .member-image img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .team-section .team-info .member .member-image img {
+    width: 250px;
+  }
 }
 .team-section .team-info .member .member-info {
   display: flex;
@@ -174,8 +276,19 @@ span {
 .team-section .team-info .member .member-info .name {
   margin-right: 10px;
 }
+@media (max-width: 500px) {
+  .team-section .team-info .member .member-info .name {
+    text-align: center;
+    margin: 0;
+  }
+}
 .team-section .team-info .member .member-info .role {
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .team-section .team-info .member .member-info .role {
+    text-align: center;
+  }
 }
 .team-section .team-info .member-selected {
   display: flex;
@@ -184,4 +297,9 @@ span {
   border-radius: 10px;
   width: auto;
   margin: 10px 0 10px 0;
+}
+@media (max-width: 500px) {
+  .team-section .team-info .member-selected {
+    width: 100%;
+  }
 }
