@@ -61,10 +61,12 @@ span {
       text-decoration: none;
       color: white;
 
-      &:hover {
-        background: rgba(255, 0, 0, 0.397);
-        border-radius: 10px;
-        width: max-content;
+      @media (min-width: 801px) {
+        &:hover {
+          background: rgba(255, 0, 0, 0.397);
+          border-radius: 10px;
+          width: max-content;
+        }
       }
     }
   }
@@ -84,9 +86,9 @@ span {
   font-size: 20rem;
   border-radius: 10px;
 
-  @media (min-width: 500px) {
+  @media (max-width: 500px) {
     width: 100%;
-    font-size: 12rem;
+    font-size: 10rem;
     text-align: center;
   }
 }
@@ -157,8 +159,11 @@ span {
         border-radius: 10px 10px 0 0;
         cursor: pointer;
 
-        &:hover {
-          background: rgba(255, 0, 0, 0.397);
+        @media (min-width: 801px) {
+          &:hover {
+            background: rgba(255, 0, 0, 0.397);
+            border-radius: 10px;
+          }
         }
 
         @media (max-width: 500px) {
@@ -218,9 +223,11 @@ span {
     text-align: center;
     cursor: pointer;
 
-    &:hover {
-      background: rgba(255, 0, 0, 0.397);
-      border-radius: 10px;
+    @media (min-width: 801px) {
+      &:hover {
+        background: rgba(255, 0, 0, 0.397);
+        border-radius: 10px;
+      }
     }
 
     @media (max-width: 500px) {

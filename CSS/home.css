@@ -55,10 +55,12 @@ span {
   text-decoration: none;
   color: white;
 }
-.header .navbar a:hover {
-  background: rgba(255, 0, 0, 0.397);
-  border-radius: 10px;
-  width: max-content;
+@media (min-width: 801px) {
+  .header .navbar a:hover {
+    background: rgba(255, 0, 0, 0.397);
+    border-radius: 10px;
+    width: max-content;
+  }
 }
 .attn {
   margin: auto;
@@ -74,10 +76,10 @@ span {
   font-size: 20rem;
   border-radius: 10px;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .attn {
     width: 100%;
-    font-size: 12rem;
+    font-size: 10rem;
     text-align: center;
   }
 }
@@ -145,8 +147,11 @@ span {
   border-radius: 10px 10px 0 0;
   cursor: pointer;
 }
-.section .features .titles .feature-title:hover {
-  background: rgba(255, 0, 0, 0.397);
+@media (min-width: 801px) {
+  .section .features .titles .feature-title:hover {
+    background: rgba(255, 0, 0, 0.397);
+    border-radius: 10px;
+  }
 }
 @media (max-width: 500px) {
   .section .features .titles .feature-title {
@@ -201,9 +206,11 @@ span {
   text-align: center;
   cursor: pointer;
 }
-.team .tab-name:hover {
-  background: rgba(255, 0, 0, 0.397);
-  border-radius: 10px;
+@media (min-width: 801px) {
+  .team .tab-name:hover {
+    background: rgba(255, 0, 0, 0.397);
+    border-radius: 10px;
+  }
 }
 @media (max-width: 500px) {
   .team .tab-name {
