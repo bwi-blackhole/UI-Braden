@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  background: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: white;
+}
+
+span {
+  color: white;
+}
+.container {
+  max-width: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  border-radius: 8px;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    a {
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.attn {
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://thumbs.gfycat.com/JubilantDefenselessIndochinahogdeer.webp");
+  background-size: 100% 100%;
+  background-color: black;
+  color: white;
+  font-size: 20rem;
+  border-radius: 10px;
+}
+
+.section {
+  display: flex;
+  justify-items: space-between;
+  margin-top: 3rem;
+  background: rgb(121, 109, 109);
+  border-radius: 10px;
+
+  .info {
+    width: 35%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    .info-text {
+      color: white;
+      font-size: 2.2rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .features {
+    width: 60%;
+    padding-top: 2rem;
+    padding-right: 2rem;
+
+    .feature-top {
+      margin: 10px 0 0 0;
+    }
+
+    .titles {
+      display: flex;
+      justify-content: space-around;
+      height: auto;
+
+      .feature-title {
+        width: 33.3%;
+        text-align: center;
+        margin-bottom: 0;
+        border-radius: 10px 10px 0 0;
+        cursor: pointer;
+      }
+    }
+
+    .feature-item {
+      display: none;
+      margin-top: 0;
+      text-align: center;
+      height: 20rem;
+      padding: 60px;
+      font-size: 2.2rem;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .text-selected {
+      background: orangered;
+      display: block;
+    }
+  }
+}
+
+.tab-selected {
+  background: orangered;
+}
+
+.meet {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+
+  .tab-name {
+    font-size: 2.2rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .name-selected {
+    background: orangered;
+    width: auto;
+    border-radius: 10px;
+    width: 10%;
+  }
+}
+
+.team-section {
+  display: flex;
+  justify-content: center;
+
+  .team-info {
+    display: flex;
+    justify-content: center;
+    background: rgb(121, 109, 109);
+    border-radius: 10px;
+
+    .member {
+      display: none;
+
+      .member-image {
+        cursor: pointer;
+        padding: 2px 0 0 10px;
+
+        img {
+          border-radius: 10px;
+        }
+      }
+
+      .member-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+
+        .name {
+          margin-right: 10px;
+        }
+
+        .role {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .member-selected {
+      display: flex;
+      justify-content: center;
+      background: orangered;
+      border-radius: 10px;
+      width: auto;
+      margin: 10px 0 10px 0;
+    }
+  }
+}
