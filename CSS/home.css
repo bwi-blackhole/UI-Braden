@@ -47,19 +47,20 @@ span {
 }
 .header .navbar {
   display: flex;
-  justify-content: space-between;
-  width: 30rem;
+  justify-content: space-around;
+  width: 35rem;
 }
 .header .navbar a {
   font-size: 1.8rem;
   text-decoration: none;
   color: white;
+  width: 9rem;
+  text-align: center;
 }
 @media (min-width: 801px) {
   .header .navbar a:hover {
-    background: rgba(255, 0, 0, 0.397);
+    background: orangered;
     border-radius: 10px;
-    width: max-content;
   }
 }
 .attn {
@@ -96,12 +97,14 @@ span {
   }
 }
 .section .info {
-  width: 35%;
+  width: 40%;
   height: auto;
   border-radius: 8px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .section .info {
@@ -117,7 +120,7 @@ span {
   margin-bottom: 10px;
 }
 .section .features {
-  width: 60%;
+  width: 55%;
   padding-top: 2rem;
   padding-right: 2rem;
 }
@@ -149,8 +152,8 @@ span {
 }
 @media (min-width: 801px) {
   .section .features .titles .feature-title:hover {
-    background: rgba(255, 0, 0, 0.397);
-    border-radius: 10px;
+    background: orangered;
+    border-radius: 10px 10px 0 0;
   }
 }
 @media (max-width: 500px) {
@@ -193,11 +196,15 @@ span {
 .team {
   display: flex;
   justify-content: space-around;
+  background: #796d6d;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 @media (max-width: 500px) {
   .team {
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 10px;
   }
 }
 .team .tab-name {
@@ -205,16 +212,20 @@ span {
   width: 12%;
   text-align: center;
   cursor: pointer;
+  margin: 0;
 }
 @media (min-width: 801px) {
   .team .tab-name:hover {
-    background: rgba(255, 0, 0, 0.397);
+    background: orangered;
     border-radius: 10px;
   }
 }
 @media (max-width: 500px) {
   .team .tab-name {
     width: 100px;
+    margin: 10px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
   }
 }
 .team .name-selected {
@@ -225,6 +236,7 @@ span {
 @media (max-width: 500px) {
   .team .name-selected {
     width: 100px;
+    border: none;
   }
 }
 .team-section {
