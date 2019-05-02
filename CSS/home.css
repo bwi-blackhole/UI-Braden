@@ -269,6 +269,9 @@ span {
 @media (max-width: 500px) {
   .team-section .team-info .member .member-image {
     padding: 0;
+    width: 220px;
+    margin-left: 25px;
+    margin-top: 5px;
   }
 }
 .team-section .team-info .member .member-image img {
@@ -276,7 +279,8 @@ span {
 }
 @media (max-width: 500px) {
   .team-section .team-info .member .member-image img {
-    width: 250px;
+    width: 220px;
+    height: 220px;
   }
 }
 .team-section .team-info .member .member-info {
@@ -285,22 +289,26 @@ span {
   justify-content: center;
   padding-left: 20px;
 }
+@media (max-width: 500px) {
+  .team-section .team-info .member .member-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+  }
+}
 .team-section .team-info .member .member-info .name {
   margin-right: 10px;
 }
 @media (max-width: 500px) {
   .team-section .team-info .member .member-info .name {
-    text-align: center;
     margin: 0;
+    width: 160px;
   }
 }
 .team-section .team-info .member .member-info .role {
   font-size: 2rem;
-}
-@media (max-width: 500px) {
-  .team-section .team-info .member .member-info .role {
-    text-align: center;
-  }
 }
 .team-section .team-info .member-selected {
   display: flex;
@@ -313,5 +321,15 @@ span {
 @media (max-width: 500px) {
   .team-section .team-info .member-selected {
     width: 100%;
+  }
+}
+.comp-selected {
+  font-size: 1.6rem;
+  width: 20rem;
+  margin-right: 1rem;
+}
+@media (max-width: 500px) {
+  .comp-selected {
+    width: 160px;
   }
 }

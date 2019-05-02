@@ -285,13 +285,17 @@ span {
 
         @media (max-width: 500px) {
           padding: 0;
+          width: 220px;
+          margin-left: 25px;
+          margin-top: 5px;
         }
 
         img {
           border-radius: 10px;
 
           @media (max-width: 500px) {
-            width: 250px;
+            width: 220px;
+            height: 220px;
           }
         }
       }
@@ -302,21 +306,29 @@ span {
         justify-content: center;
         padding-left: 20px;
 
+        @media (max-width: 500px) {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 10px;
+        }
+
         .name {
           margin-right: 10px;
 
           @media (max-width: 500px) {
-            text-align: center;
             margin: 0;
+            width: 160px;
           }
         }
 
         .role {
           font-size: 2rem;
 
-          @media (max-width: 500px) {
-            text-align: center;
-          }
+          // @media (max-width: 500px) {
+          //   text-align: center;
+          // }
         }
       }
     }
@@ -333,5 +345,15 @@ span {
         width: 100%;
       }
     }
+  }
+}
+
+.comp-selected {
+  font-size: 1.6rem;
+  width: 20rem;
+  margin-right: 1rem;
+
+  @media (max-width: 500px) {
+    width: 160px;
   }
 }
