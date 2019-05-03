@@ -320,6 +320,7 @@ span {
   margin: 10px 0 10px 0;
   animation-duration: 1s;
   animation-name: slidein;
+  overflow: hidden;
 }
 @keyframes slidein {
   0% {
