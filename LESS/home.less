@@ -316,6 +316,7 @@ span {
 
         .name {
           margin-right: 10px;
+          width: 15rem;
 
           @media (max-width: 500px) {
             margin: 0;
@@ -336,6 +337,25 @@ span {
       border-radius: 10px;
       width: auto;
       margin: 10px 0 10px 0;
+      animation-duration: 1s;
+      animation-name: slidein;
+
+      @keyframes slidein {
+        0% {
+          margin-left: 150%;
+          width: 300%;
+        }
+
+        50% {
+          margin-left: -5%;
+          width: 110%;
+        }
+
+        100% {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
 
       @media (max-width: 500px) {
         width: 100%;
