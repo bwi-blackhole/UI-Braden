@@ -300,6 +300,7 @@ span {
 }
 .team-section .team-info .member .member-info .name {
   margin-right: 10px;
+  width: 15rem;
 }
 @media (max-width: 500px) {
   .team-section .team-info .member .member-info .name {
@@ -317,6 +318,23 @@ span {
   border-radius: 10px;
   width: auto;
   margin: 10px 0 10px 0;
+  animation-duration: 1s;
+  animation-name: slidein;
+  overflow: hidden;
+}
+@keyframes slidein {
+  0% {
+    margin-left: 150%;
+    width: 300%;
+  }
+  50% {
+    margin-left: -5%;
+    width: 110%;
+  }
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .team-section .team-info .member-selected {
